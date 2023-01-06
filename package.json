@@ -1,0 +1,18 @@
+{
+    "name": "express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "author": "Nidhi Patel",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "shippo": "^1.7.1",
+        "stripe": "^11.5.0"
+    }
+}
