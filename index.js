@@ -19,7 +19,6 @@ app.post("/api/getshipmentdetails", function (req, res) {
         async: false,
       },
       function (err, shipment) {
-        console.log(shipment.rates,"shipment rates")
         return res.json(shipment.rates);
       }
     );
@@ -35,8 +34,6 @@ app.post("/api/getlabel", function (req, res) {
           "label_file_type": "PNG",
           "async": false
       }, function(err, transaction) {
-         // asynchronous callback
-         console.log(transaction,"transaction")
         return res.json(transaction.label_url);
       });
    } 
